@@ -1,0 +1,18 @@
+{
+  "name": "TruckTett REST API Documentation",
+  "version": "0.1.0",
+  "description": "Documentation of the REST API from TruckTett",
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url" : "/doc/"
+  },
+  "order": [
+  	"Login",
+  	"Users",
+  	"Dev"
+  ],
+  "template": {
+  	"forceLanguage": "en",
+  	"withCompare": false
+  }
+}

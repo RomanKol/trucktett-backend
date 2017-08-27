@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>TruckTett - WebBackend</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header" class="col-md-12 jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>TruckTett Webend</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <nav id="nav" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 mb">
+                        <button class="form-control btn-primary">User Profil</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb">
+                        <button class="form-control btn-primary">Users</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb">
+                        <button class="form-control btn-primary">Game</button>
+                    </div>
+                    <div class="col-xs-6 col-md-3 mb">
+                        <button class="form-control btn-primary">Chat</button>
+                    </div>
+                </div>
+            </nav>
+
+            <section id="login" class="col-md-6 col-md-offset-3 bg-info">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2 mt-2 mb">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 mb">
+                        <label for="mail">Email address</label>
+                        <input name="mail" type="text" class="form-control" placeholder="Mail">
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 mb">
+                        <label for="password">Password</label>
+                        <input name="password" type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="col-xs-8 col-xs-offset-2 mb-2 mt">
+                        <button class="form-control btn-primary">Login</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="user" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-md-12 page-header">
+                        <h2>Profile</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-warning">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="details">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Nearby</h3>
+                        <div class="mapNearby map"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="users" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-md-12 page-header">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>Users</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrapper">
+                            <div class="list row">
+
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card bg-warning">
+                            <h2>No Card Selected</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="map mt"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="game" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-md-12 page-header">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h2>Game</h2>
+                            </div>
+                            <div class="col-xs-4 mt">
+                                <button class="btn btn-success form-control toggle">Queue</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <ul class="list-unstyled bg-info"></ul>
+                    </div>
+                     <div class="col-xs-6">
+                        <div class="card bg-warning">
+                            <h2>Start Game</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="chat" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-md-12 page-header">
+                        <h2>Chat</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <ul class="list-unstyled bg-info"></ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Your Message">
+                    </div>
+                    <div class="col-xs-4 mb">
+                        <button class="form-control btn btn-primary toggle">Send</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="server" class="col-md-12 hidden">
+                <div class="row">
+                    <div class="col-md-12 page-header">
+                        <h2>Server Logs</h2>
+                    </div>
+                    <div class="col-xs-12">
+                        <ul class="list-unstyled bg-info"></ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="scripts/io.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

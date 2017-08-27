@@ -1,0 +1,23 @@
+{
+  "name": "trucktett-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Trucktett Application",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.3.6",
+    "morgan": "^1.6.1",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6"
+  },
+  "scripts": {
+    "start": "node app",
+    "docs": "./node_modules/.bin/apidoc -i app/ -o app/public/doc"
+  },
+  "author": "Roman Kollatschny - rk056",
+  "license": "ISC"
+}
