@@ -12,7 +12,7 @@
     "socket.io": "^1.4.4"
   },
   "devDependencies": {
-    "apidoc": "^0.17.6"
+    "apidoc": "^0.54.0"
   },
   "scripts": {
     "start": "node app",
